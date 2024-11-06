@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #f4f4f4;
+    width: 200px;
+}
+
+#map3Button  {
+    margin-top: 5px;
+    padding: 0px;  
+}
+
+#teamName   {
+    margin-top: 5px;
+    padding: 0px;  
+}
+
+#poiList    {
+    margin-top: 5px;
+    padding: 0px;  
+}
+
+.top-buttons {
+    flex: 1;
+}
+
+#resetButton {
+    margin-top: 5px;
+    padding: 0px;  
+    background-color: #ff6666; 
+}
+
+
+#toggleLoggingButton {
+    margin-top: auto;
+}
+
+.map-container {
+    position: relative;
+    margin-left: 5px;
+}
+
+.map {
+    width: 800px;
+    height: auto;
+}
+
+.poi {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 0px 2px;
+    border-radius: 5px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#stormpoint-poi-1 { top: 300px; left: 265px; }
+#stormpoint-poi-2 { top: 215px; left: 335px; }
+#stormpoint-poi-3 { top: 135px; left: 220px; }
+#stormpoint-poi-4 { top: 268px; left: 155px; }
+#stormpoint-poi-5 { top: 423px; left: 126px; }
+#stormpoint-poi-6 { top: 488px; left: 220px; }
+#stormpoint-poi-7 { top: 592px; left: 155px; }
+#stormpoint-poi-8 { top: 620px; left: 309px; }
+#stormpoint-poi-9 { top: 433px; left: 318px; }
+#stormpoint-poi-10 { top: 348px; left: 425px; }
+#stormpoint-poi-11 { top: 283px; left: 560px; }
+#stormpoint-poi-12 { top: 135px; left: 470px; }
+#stormpoint-poi-13 { top: 108px; left: 610px; }
+#stormpoint-poi-14 { top: 225px; left: 655px; }
+#stormpoint-poi-15 { top: 345px; left: 730px; }
+#stormpoint-poi-16 { top: 339px; left: 610px; }
+#stormpoint-poi-17 { top: 490px; left: 610px; }
+#stormpoint-poi-18 { top: 630px; left: 689px; }
+#stormpoint-poi-19 { top: 655px; left: 555px; }
+#stormpoint-poi-20 { top: 670px; left: 423px; }
+#stormpoint-poi-21 { top: 560px; left: 491px; }
+#stormpoint-poi-22 { top: 493px; left: 420px; }
+#stormpoint-poi-23 { top: 415px; left: 490px; }
+
+#worldsedge-poi-1 { top: 220px; left: 225px; }
+#worldsedge-poi-2 { top: 162px; left: 363px; }
+#worldsedge-poi-3 { top: 310px; left: 251px; }
+#worldsedge-poi-4 { top: 339px; left: 150px; }
+#worldsedge-poi-5 { top: 375px; left: 281px; }
+#worldsedge-poi-6 { top: 429px; left: 153px; }
+#worldsedge-poi-7 { top: 468px; left: 252px; }
+#worldsedge-poi-8 { top: 578px; left: 211px; }
+#worldsedge-poi-9 { top: 518px; left: 369px; }
+#worldsedge-poi-10 { top: 655px; left: 350px; }
+#worldsedge-poi-11 { top: 596px; left: 470px; }
+#worldsedge-poi-12 { top: 715px; left: 452px; }
+#worldsedge-poi-13 { top: 730px; left: 583px; }
+#worldsedge-poi-14 { top: 638px; left: 609px; }
+#worldsedge-poi-15 { top: 570px; left: 649px; }
+#worldsedge-poi-16 { top: 473px; left: 620px; }
+#worldsedge-poi-17 { top: 355px; left: 590px; }
+#worldsedge-poi-18 { top: 372px; left: 422px; }
+#worldsedge-poi-19 { top: 200px; left: 444px; }
+#worldsedge-poi-20 { top: 276px; left: 540px; }
+#worldsedge-poi-21 { top: 166px; left: 610px; }
+#worldsedge-poi-22 { top: 320px; left: 678px; }
+
+#edistrict-poi-1 { top: 169px; left: 166px; }
+#edistrict-poi-2 { top: 154px; left: 365px; }
+#edistrict-poi-3 { top: 202px; left: 527px; }
+#edistrict-poi-4 { top: 309px; left: 127px; }
+#edistrict-poi-5 { top: 360px; left: 285px; }
+#edistrict-poi-6 { top: 291px; left: 412px; }
+#edistrict-poi-7 { top: 312px; left: 528px; }
+#edistrict-poi-8 { top: 427px; left: 576px; }
+#edistrict-poi-9 { top: 310px; left: 669px; }
+#edistrict-poi-10 { top: 405px; left: 103px; }
+#edistrict-poi-11 { top: 453px; left: 228px; }
+#edistrict-poi-12 { top: 364px; left: 440px; }
+#edistrict-poi-13 { top: 532px; left: 548px; }
+#edistrict-poi-14 { top: 459px; left: 660px; }
+#edistrict-poi-15 { top: 597px; left: 666px; }
+#edistrict-poi-16 { top: 567px; left: 248px; }
+#edistrict-poi-17 { top: 545px; left: 105px; }
+#edistrict-poi-18 { top: 654px; left: 300px; }
+#edistrict-poi-19 { top: 517px; left: 351px; }
+#edistrict-poi-20 { top: 612px; left: 423px; }
+#edistrict-poi-21 { top: 714px; left: 381px; }
+#edistrict-poi-22 { top: 664px; left: 590px; }
+#edistrict-poi-23 { top: 754px; left: 550px; }
+
+.poi-table-container {
+    padding: 0px;
+    margin-left: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

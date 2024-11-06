@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POI Draft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="top-buttons">
+                <h2>POI Picker</h2>
+                <button id="map1Button">Stormpoint</button>
+                <button id="map2Button">World's Edge</button>
+                <button id="map3Button">Edistrict</button>
+                <input type="text" id="teamName" placeholder="Enter Team Name">
+                <select id="poiList">
+                    <option value="" disabled selected>Select POI</option>
+                </select>
+                <button id="pickButton">Pick</button>
+                <button id="removeButton">Remove</button>
+                <button id="resetButton">Reset</button>
+            </div>
+            <button id="toggleLoggingButton">Toggle Coordinate Logging</button>
+        </div>
+        <div class="map-container">
+            <img src="images/Stormpoint.png" alt="Map" class="map" id="map1">
+            <div id="stormpoint-pois">
+                <div class="poi" id="stormpoint-poi-1">1 - Checkpoint</div>
+                <div class="poi" id="stormpoint-poi-2">2 - Trident</div>
+                <div class="poi" id="stormpoint-poi-3">3 - North Pad</div>
+                <div class="poi" id="stormpoint-poi-4">4 - Downed Beast</div>
+                <div class="poi" id="stormpoint-poi-5">5 - The Mill</div>
+                <div class="poi" id="stormpoint-poi-6">6 - Bean</div>
+                <div class="poi" id="stormpoint-poi-7">7 - Cenote Cave</div>
+                <div class="poi" id="stormpoint-poi-8">8 - Barometer</div>
+                <div class="poi" id="stormpoint-poi-9">9 - Ceto Station</div>
+                <div class="poi" id="stormpoint-poi-10">10 - Cascades Falls</div>
+                <div class="poi" id="stormpoint-poi-11">11 - Command Center</div>
+                <div class="poi" id="stormpoint-poi-12">12 - The Wall</div>
+                <div class="poi" id="stormpoint-poi-13">13 - Zeus Station</div>
+                <div class="poi" id="stormpoint-poi-14">14 - Lightning Rod</div>
+                <div class="poi" id="stormpoint-poi-15">15 - Hillside</div>
+                <div class="poi" id="stormpoint-poi-16">16 - Storm Catcher</div>
+                <div class="poi" id="stormpoint-poi-17">17 - Launch Pad</div>
+                <div class="poi" id="stormpoint-poi-18">18 - Devastated Coast</div>
+                <div class="poi" id="stormpoint-poi-19">19 - Echo HQ</div>
+                <div class="poi" id="stormpoint-poi-20">20 - Coastal Camp</div>
+                <div class="poi" id="stormpoint-poi-21">21 - The Pylon</div>
+                <div class="poi" id="stormpoint-poi-22">22 - Jurassic</div>
+                <div class="poi" id="stormpoint-poi-23">23 - Cascade Balls</div>
+            </div>
+
+            <img src="images/Worlds Edge.png" alt="Map" class="map" id="map2" style="display: none;">
+            <div id="worldsedge-pois" style="display: none;">
+                <div class="poi" id="worldsedge-poi-1">1 - Sky West</div>
+                <div class="poi" id="worldsedge-poi-2">2 - Sky East</div>
+                <div class="poi" id="worldsedge-poi-3">3 - Countdown</div>
+                <div class="poi" id="worldsedge-poi-4">4 - Lava Fissure</div>
+                <div class="poi" id="worldsedge-poi-5">5 - Landslide</div>
+                <div class="poi" id="worldsedge-poi-6">6 - Mirage</div>
+                <div class="poi" id="worldsedge-poi-7">7 - Staging</div>
+                <div class="poi" id="worldsedge-poi-8">8 - Thermal</div>
+                <div class="poi" id="worldsedge-poi-9">9 - Harvester</div>
+                <div class="poi" id="worldsedge-poi-10">10 - The Tree</div>
+                <div class="poi" id="worldsedge-poi-11">11 - Lava Siphon</div>
+                <div class="poi" id="worldsedge-poi-12">12 - Launch Site</div>
+                <div class="poi" id="worldsedge-poi-13">13 - The Dome</div>
+                <div class="poi" id="worldsedge-poi-14">14 - Stacks</div>
+                <div class="poi" id="worldsedge-poi-15">15 - Big Maude</div>
+                <div class="poi" id="worldsedge-poi-16">16 - The Geyser</div>
+                <div class="poi" id="worldsedge-poi-17">17 - Fragment East</div>
+                <div class="poi" id="worldsedge-poi-18">18 - Monument</div>
+                <div class="poi" id="worldsedge-poi-19">19 - Survey Camp</div>
+                <div class="poi" id="worldsedge-poi-20">20 - The Epicenter</div>
+                <div class="poi" id="worldsedge-poi-21">21 - Climatizer</div>
+                <div class="poi" id="worldsedge-poi-22">22 - Overlook</div>
+            </div>
+
+            <img src="images/Edistrict.png" alt="Map" class="map" id="map3" style="display: none;">
+            <div id="edistrict-pois" style="display: none;">
+                <div class="poi" id="edistrict-poi-1">1 - Resort</div>
+                <div class="poi" id="edistrict-poi-2">2 - The Lotus</div>
+                <div class="poi" id="edistrict-poi-3">3 - Electro Dam</div>
+                <div class="poi" id="edistrict-poi-4">4 - Boardwalk</div>
+                <div class="poi" id="edistrict-poi-5">5 - City Hall</div>
+                <div class="poi" id="edistrict-poi-6">6 - Riverside</div>
+                <div class="poi" id="edistrict-poi-7">7 - Galleria</div>
+                <div class="poi" id="edistrict-poi-8">8 - Angels Atrium</div>
+                <div class="poi" id="edistrict-poi-9">9 - Heights</div>
+                <div class="poi" id="edistrict-poi-10">10 - Blossom Drive</div>
+                <div class="poi" id="edistrict-poi-11">11 - Neon Square</div>
+                <div class="poi" id="edistrict-poi-12">12 - Energy Bank</div>
+                <div class="poi" id="edistrict-poi-13">13 - Stadium West</div>
+                <div class="poi" id="edistrict-poi-14">14 - Stadium North</div>
+                <div class="poi" id="edistrict-poi-15">15 - Stadium South</div>
+                <div class="poi" id="edistrict-poi-16">16 - Street Market</div>
+                <div class="poi" id="edistrict-poi-17">17 - Street Market Grief</div>
+                <div class="poi" id="edistrict-poi-18">18 - Viaduct</div>
+                <div class="poi" id="edistrict-poi-19">19 - Draft Point</div>
+                <div class="poi" id="edistrict-poi-20">20 - Is this a POI?</div>
+                <div class="poi" id="edistrict-poi-21">21 - Shipyard Arcade</div>
+                <div class="poi" id="edistrict-poi-22">22 - Humbert Labs</div>
+                <div class="poi" id="edistrict-poi-23">23 - Old Town</div>
+            </div>
+        </div>
+        <div class="poi-table-container">
+            <table id="poiTable">
+                <thead>
+                    <tr>
+                        <th>POI</th>
+                        <th>Team Name</th>
+                        <th>Draft</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
