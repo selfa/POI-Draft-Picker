@@ -24,6 +24,11 @@ body {
     padding: 0px;  
 }
 
+#pickButton {
+    margin-top: 5px;
+    padding: 0px;  
+}
+
 #poiList    {
     margin-top: 5px;
     padding: 0px;  
